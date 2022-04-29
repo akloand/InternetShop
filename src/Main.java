@@ -19,12 +19,13 @@ public class Main {
         basket2.print("\nСодержимое корзины");
         System.out.println("Стоимость всех товаров Пети: " + basket2.getTotalPrice());
 
-        Basket mashaBasket = new Basket();
-        mashaBasket.add("Стол", 300, 2);
-        mashaBasket.add("Хлеб", 30, 3);
-        mashaBasket.add("Лук", 130, 5);
+        Basket mashaBasket = new Basket(300);
+        mashaBasket.add("Стол", 300, 2,3.2);
+        mashaBasket.add("Хлеб", 30, 3,0.2);
+        mashaBasket.add("Лук", 130, 5,0.1);
         mashaBasket.print("\nСодержимое корзины Маши: ");
-        System.out.println("Стоимость всех товаров Маши: " + mashaBasket.getTotalPrice());
+        System.out.println("Стоимость всех товаров Маши: " + mashaBasket.getTotalPrice()+" руб.");
+        System.out.println("Вес всех товаров Маши: " + mashaBasket.getTotalWeight()+" кг");
 
 //        basket1.clear();
 //        System.out.println();
