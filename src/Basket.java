@@ -1,14 +1,43 @@
 public class Basket {
     private String items = "";
     private int totalPrice = 0;
+    private int limit;
+    private int count;
+
+    public Basket() {
+        items = "Список товаров: ";
+        this.limit = 100000;
+    }
+
+    public Basket(int limit) {
+        this();
+        this.limit = limit;
+    }
+
+    public Basket(String items, int totalPrice, int count) {
+        this();
+        this.items = this.items + items;
+        this.totalPrice = totalPrice;
+        this.count = count;
+    }
 
     public void add(String name, int price) {
+        add(name, price, 1);
+    }
+
+    public void add(String name, int price, int count) {
         if (contains(name)) {
             return;
         }
-        items = items + "\n" + name + " - " + price;
-        totalPrice = totalPrice + price;
+        if (totalPrice + price > +limit) {
+            return;
+        }
+
+        items = items + "\n" + name + " - " + count + " шт. - " + price;
+
+        totalPrice = totalPrice + count * price;
     }
+
 
     public void clear() {
         items = "";
@@ -22,7 +51,6 @@ public class Basket {
     public boolean contains(String name) {
         return items.contains(name);
     }
-
 
 
     public void print(String title) {
