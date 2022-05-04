@@ -1,5 +1,7 @@
 import All.Arithmetic;
 
+import java.math.BigInteger;
+
 public class Main2 {
     public static void main(String[] args) {
 
@@ -25,6 +27,8 @@ public class Main2 {
         value3.getMax();
         value3.getMin();
         value3.getFactorial();
+
+
 
     }
 

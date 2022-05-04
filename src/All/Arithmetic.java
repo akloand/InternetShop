@@ -59,6 +59,7 @@ public class Arithmetic {
 
     }
 
+
     public void getString() {
         sum = first + second;
         System.out.println("Сумма чисел " + text + " " + first + " + " + second + " = " + sum);

@@ -1,3 +1,5 @@
+package All;
+
 public class Basket {
     private String items = "";
     private int totalPrice = 0;
@@ -31,7 +33,7 @@ public class Basket {
         if (contains(name)) {
             return;
         }
-        if (totalPrice + price > +limit) {
+        if (totalPrice + price > limit) {
             return;
         }
 

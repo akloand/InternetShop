@@ -1,3 +1,5 @@
+import All.Basket;
+
 public class Main {
 
 
@@ -26,6 +28,9 @@ public class Main {
         mashaBasket.print("\nСодержимое корзины Маши: ");
         System.out.println("Стоимость всех товаров Маши: " + mashaBasket.getTotalPrice()+" руб.");
         System.out.println("Вес всех товаров Маши: " + mashaBasket.getTotalWeight()+" кг");
+
+        Basket romaBasket = new Basket("Картина", 100, 1, 2.2);
+        romaBasket.print("\nСОд еорз:");
 
 //        basket1.clear();
 //        System.out.println();
