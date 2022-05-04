@@ -1,3 +1,7 @@
+package All;
+
+import java.math.BigInteger;
+
 public class Arithmetic {
     private int first;
     private int second;
@@ -5,6 +9,7 @@ public class Arithmetic {
     private int sum;
     private int mult;
     private int max, min;
+    private int fact = 1;
 
     public Arithmetic(int first, int second) {
         this.first = first;
@@ -43,6 +48,15 @@ public class Arithmetic {
             min = first;
         }
         System.out.println("Min = " + min);
+    }
+
+    public void getFactorial() {
+        BigInteger factorial = BigInteger.ONE;
+        for (int i = 1; i <= first; i++) {
+            factorial = factorial.multiply(BigInteger.valueOf(i));
+        }
+        System.out.println("Факториал " + first + " равен " + factorial);
+
     }
 
     public void getString() {
