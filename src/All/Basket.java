@@ -26,8 +26,7 @@ public class Basket {
     }
 
     public void add(String name, int price) {
-
-        add(name, price, 1,0.1);
+        add(name, price, 1, 0.1);
     }
 
     public void add(String name, int price, int count, double weight) {
@@ -38,7 +37,7 @@ public class Basket {
             return;
         }
 
-        items = items + "\n" + name + " - " + count + " шт. - " + price+" руб.";
+        items = items + "\n" + name + " - " + count + " шт. - " + price + " руб.";
         totalWeight = totalWeight + count * weight;
         totalPrice = totalPrice + count * price;
     }
@@ -56,6 +55,7 @@ public class Basket {
     public double getTotalWeight() {
         return totalWeight;
     }
+
     public boolean contains(String name) {
         return items.contains(name);
     }

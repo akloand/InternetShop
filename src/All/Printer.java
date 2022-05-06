@@ -1,5 +1,7 @@
 package All;
 
+import java.util.function.ToDoubleBiFunction;
+
 public class Printer {
     private String queue = "";
     private int totalPage = 0;
@@ -16,6 +18,7 @@ public class Printer {
     public void append(String text, String nameDoc, int pages) {
         queue = queue + "\nТекст документа: " + text + " - " + nameDoc + " - " + pages + " стр.";
         this.pages += pages;
+        totalPage = totalPage + pages;
     }
 
     public void clear() {
@@ -24,7 +27,7 @@ public class Printer {
 
     public void print() {
         if (queue.isEmpty()) {
-            System.out.println("\nОчередь печати пуста");
+            System.out.println("\n\u26D4 Очередь печати пуста \u26D4");
         }
         System.out.println(queue);
         queue = "";
@@ -32,8 +35,7 @@ public class Printer {
     }
 
     public void getPendingPagesCount() {
-        totalPage = totalPage + pages;
-        System.out.println("\nНапечатано: "+totalPage+" стр.");
+        System.out.println("Напечатано: " + totalPage + " стр.");
     }
 
 }
