@@ -4,7 +4,7 @@ public class GearBox {
     /**
      * 0  - meutral
      * -1 - rear
-     * 1-6
+     * 1-6-
      */
     private int minGear = 1;
     private int maxGear = 6;
