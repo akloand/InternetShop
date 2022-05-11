@@ -4,7 +4,8 @@ import java.util.function.ToDoubleBiFunction;
 
 public class Printer {
     private String queue = "";
-    private int totalPage = 0;
+    private int totalPage = 0; //стр.
+    private int limitPages; //стр. в принтере
     private int pages = 0;
 
     public void append(String text) {

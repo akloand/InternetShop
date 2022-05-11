@@ -1,6 +1,6 @@
 import All.Basket;
 
-public class Main {
+public class MainBasket {
 
 
     public static void main(String[] args) {
@@ -30,7 +30,7 @@ public class Main {
         System.out.println("Вес всех товаров Маши: " + mashaBasket.getTotalWeight()+" кг");
 
         Basket romaBasket = new Basket("Картина", 100, 1, 2.2);
-        romaBasket.print("\nСОд еорз:");
+        romaBasket.print("\nСод корзины:");
 
 //        basket1.clear();
 //        System.out.println();

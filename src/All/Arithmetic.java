@@ -11,6 +11,10 @@ public class Arithmetic {
     private int max, min;
     private int fact = 1;
 
+    public Arithmetic(int first) {
+        this.first = first;
+    }
+
     public Arithmetic(int first, int second) {
         this.first = first;
         this.second = second;

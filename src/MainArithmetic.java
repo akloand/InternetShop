@@ -1,8 +1,6 @@
 import All.Arithmetic;
 
-import java.math.BigInteger;
-
-public class Main2 {
+public class MainArithmetic {
     public static void main(String[] args) {
 
 
@@ -28,7 +26,8 @@ public class Main2 {
         value3.getMin();
         value3.getFactorial();
 
-
+        Arithmetic value4 = new Arithmetic(50);
+        value4.getFactorial();
 
     }
 
