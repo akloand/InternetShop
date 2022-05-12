@@ -11,8 +11,8 @@ public class MainAirport {
         int lenghtJet = airport.getAllAircrafts().toArray().length;
         int lenghtTerminal = airport.getTerminals().toArray().length;
         int arrayJet[] = new int[lenghtJet];
-        System.out.println("Количество терминалов: "+lenghtJet);
-        System.out.println("Количество самолетов: "+lenghtTerminal);
+        System.out.println("Количество терминалов: " + lenghtJet);
+        System.out.println("Количество самолетов: " + lenghtTerminal);
 //        for (int i = 0; i < lenghtJet ; i++) {
 //            arrayJet[i] = airport.getAllAircrafts();
 //

@@ -1,4 +1,4 @@
-package All;
+package Shop;
 
 public class Basket {
     private String items = "";
