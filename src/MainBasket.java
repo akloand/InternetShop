@@ -22,15 +22,22 @@ public class MainBasket {
         System.out.println("Стоимость всех товаров Пети: " + basket2.getTotalPrice());
 
         Basket mashaBasket = new Basket(300);
-        mashaBasket.add("Стол", 300, 2,3.2);
-        mashaBasket.add("Хлеб", 30, 3,0.2);
-        mashaBasket.add("Лук", 130, 5,0.1);
+        mashaBasket.add("Стол", 300, 2, 3.2);
+        mashaBasket.add("Хлеб", 30, 3, 0.2);
+        mashaBasket.add("Лук", 130, 5, 0.1);
         mashaBasket.print("\nСодержимое корзины Маши: ");
-        System.out.println("Стоимость всех товаров Маши: " + mashaBasket.getTotalPrice()+" руб.");
-        System.out.println("Вес всех товаров Маши: " + mashaBasket.getTotalWeight()+" кг");
+        System.out.println("Стоимость всех товаров Маши: " + mashaBasket.getTotalPrice() + " руб.");
+        System.out.println("Вес всех товаров Маши: " + mashaBasket.getTotalWeight() + " кг");
 
         Basket romaBasket = new Basket("Картина", 100, 1, 2.2);
-        romaBasket.print("\nСод корзины:");
+        romaBasket.print("\nСодержание корзины Ромы:");
+
+        Basket jenyaBasket = new Basket("sdfsdf", 50, 3, 5.1);
+        jenyaBasket.add("Fsdfs df", 8, 2, 3.4);
+        System.out.println("Стоимость всех товаров Жени: " + jenyaBasket.getTotalPrice() + " руб.");
+        romaBasket.print("\nСодержание корзины Жени:");
+
+        System.out.println("\nКоличество корзин: " + Basket.countBasket);
 
 //        basket1.clear();
 //        System.out.println();

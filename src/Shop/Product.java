@@ -3,8 +3,8 @@ package Shop;
 import java.util.Objects;
 
 public class Product {
-    private int price;
-    private String name;
+    private final int price;
+    private final String name;
     private int barCode;
 
     public Product(String name, int price) {
@@ -16,16 +16,16 @@ public class Product {
         return price;
     }
 
-    public void setPrice(int price) {
-        this.price = price;
+    public Product setPrice(int price) {
+        return new Product(name, price);
     }
 
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public Product setName(String name) {
+        return new Product(name, price);
     }
 
     public String toString() {
