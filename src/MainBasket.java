@@ -37,7 +37,11 @@ public class MainBasket {
         System.out.println("Стоимость всех товаров Жени: " + jenyaBasket.getTotalPrice() + " руб.");
         romaBasket.print("\nСодержание корзины Жени:");
 
-        System.out.println("\nКоличество корзин: " + Basket.countBasket);
+        System.out.println("\nКоличество корзин: " + Basket.countBasket+" корзин");
+
+        System.out.println("\nСтоимость всех товаров в корзинах: "+Basket.totalPriceOfBaskets+" р.\nКоличество всех выбранных товаров: "+Basket.totalCountItemsOfBaskets+" шт.");
+        System.out.println("\nСредняя стоимость товаров во всех корзинах: " + Basket.totalAverage+" р.");
+        System.out.println("\nСредняя стоимость корзин: " + Basket.totalAverageBsaket+" р.");
 
 //        basket1.clear();
 //        System.out.println();

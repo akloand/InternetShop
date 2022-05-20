@@ -9,6 +9,15 @@ public class Basket {
 
     public static int countBasket = 0;
 
+    public static int totalPriceOfBaskets = 0;
+    public static int totalCountItemsOfBaskets = 0;
+    public static double totalAverage = 0;
+    public static double totalAverageBsaket = 0;
+
+
+    private static int timeout = 3600 * 24 * 7;
+
+
 
     public Basket() {
         countBasket += 1;
@@ -44,6 +53,11 @@ public class Basket {
         items = items + "\n" + name + " - " + count + " шт. - " + price + " руб.";
         totalWeight = totalWeight + count * weight;
         totalPrice = totalPrice + count * price;
+        totalPriceOfBaskets += totalPrice;
+
+        totalCountItemsOfBaskets += count;
+        totalAverage = (double)totalPriceOfBaskets / totalCountItemsOfBaskets;
+        totalAverageBsaket = (double) totalPriceOfBaskets / countBasket;
     }
 
 
