@@ -1,3 +1,5 @@
+package Shop;
+
 import Shop.Basket;
 
 public class MainBasket {

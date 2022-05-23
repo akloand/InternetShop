@@ -1,3 +1,5 @@
+package Shop;
+
 import Shop.Order;
 import Shop.Product;
 

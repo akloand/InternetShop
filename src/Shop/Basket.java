@@ -21,7 +21,7 @@ public class Basket {
 
     public Basket() {
         countBasket += 1;
-        items = "Список товаров: ";
+        items = "Список товаров : ";
         this.limit = 100000;
     }
 

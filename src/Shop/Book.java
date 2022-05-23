@@ -5,13 +5,13 @@ public class Book {
     private final String name;
     private final String author;
     private final int pages;
-    private final int neumberISBN;
+    private final int numberISBN;
 
-    public Book(String name, String author, int pages, int neumberISBN) {
+    public Book(String name, String author, int pages, int numberISBN) {
         this.name = name;
         this.author = author;
         this.pages = pages;
-        this.neumberISBN = neumberISBN;
+        this.numberISBN = numberISBN;
     }
 
     public String getName() {
@@ -26,7 +26,7 @@ public class Book {
         return pages;
     }
 
-    public int getNeumberISBN() {
-        return neumberISBN;
+    public int getNumberISBN() {
+        return numberISBN;
     }
 }
