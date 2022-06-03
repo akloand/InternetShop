@@ -1,7 +1,7 @@
 package ArithmeticCalculator;
 
 public enum Operation {
-    ADD, SUBSTRACT, MULTYPLY;
+    ADD, SUBSTRACT, MULTYPLY, DIV;
 
 
 }
