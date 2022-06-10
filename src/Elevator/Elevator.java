@@ -1,6 +1,6 @@
-package All;
+package Elevator;
 
-public class ElevatorTest {
+public class Elevator {
     private int currentFloor = 1;
     private int minFloor;
     private int maxFloor;
@@ -8,7 +8,7 @@ public class ElevatorTest {
     private String youArrived = " - Вы приехали!!!";
 
 
-    public ElevatorTest(int minFloor, int maxFloor) {
+    public Elevator(int minFloor, int maxFloor) {
         this.minFloor = minFloor;
         this.maxFloor = maxFloor;
 
@@ -31,29 +31,33 @@ public class ElevatorTest {
 //        }
 //    }
 
-    public void move(int floor) {
+    public void move1(int floor) {
         if (floor < minFloor || floor > maxFloor || floor == 0) {
             System.out.println("Такого этажа не существует!!!");
         } else if (floor == currentFloor) {
-            System.out.println("указан текущий этаж: " + floor);
+            System.out.println("Указан текущий этаж: " + currentFloor);
         } else if (floor > currentFloor) {
-            for (int i = currentFloor + 1; i < floor; i++) {
-                if (i == 0) {
-                    continue;
+            while (true) {
+                moveUp();
+                if (currentFloor != 0) {
+                    System.out.println(yourFloor + currentFloor);
                 }
-                System.out.println(yourFloor + i);
+                if (floor == currentFloor) {
+                    break;
+                }
             }
-            System.out.println(yourFloor + floor + youArrived);
-            currentFloor = floor;
+            System.out.println(youArrived);
         } else if (floor < currentFloor) {
-            for (int i = currentFloor - 1; i > floor; i--) {
-                if (i == 0) {
-                    continue;
+            while (true) {
+                moveDown();
+                if (currentFloor != 0) {
+                    System.out.println(yourFloor + currentFloor);
                 }
-                System.out.println(yourFloor + i);
+                if (floor == currentFloor) {
+                    break;
+                }
             }
-            System.out.println(yourFloor + floor + youArrived);
-            currentFloor = floor;
+            System.out.println(youArrived);
         }
 
 //        if (currentFloor <= floor && (floor <= maxFloor) && (floor >= minFloor)) {
@@ -69,9 +73,9 @@ public class ElevatorTest {
 //        } else {
 //            System.out.println("Такого этажа не существует!!!");
 //        }
-//        if (floor <= maxFloor && floor >= minFloor) {
-//            currentFloor = floor;
-//        }
+//            if (floor <= maxFloor && floor >= minFloor) {
+//        currentFloor = floor;
+//    }
 
 
     }

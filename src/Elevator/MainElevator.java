@@ -1,4 +1,4 @@
-import All.Elevator;
+package Elevator;
 
 import java.util.Scanner;
 

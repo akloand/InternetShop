@@ -11,7 +11,7 @@ public class DateTest {
 
         Period period = birthday.until(now);
 
-        return period.getYears() + " years, " + period.getMonths() + " month, " + period.getDays() + " days"+ period.toTotalMonths();
+        return period.getYears() + " years, " + period.getMonths() + " month, " + period.getDays() + " days "+ period.hashCode();
 
     }
 }
