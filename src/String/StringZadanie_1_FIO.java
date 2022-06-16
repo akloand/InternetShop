@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 import static String.FirstUpperCase.firstUpperCase;
 
-public class StringZadanie_1 {
+public class StringZadanie_1_FIO {
     public static void main(String[] args) {
         while (true) {
             System.out.println("Введи ФИО сотрудника: ");
