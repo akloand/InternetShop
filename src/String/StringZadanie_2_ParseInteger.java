@@ -1,5 +1,8 @@
 package String;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class StringZadanie_2_ParseInteger {
     public static void main(String[] args) {
 
@@ -7,18 +10,19 @@ public class StringZadanie_2_ParseInteger {
         int sum = 0;
         String[] words = text.split(" ");
 
-        for (String word : words) {
-            //System.out.println(word);
-            try {
-                int d = Integer.parseInt(word);
-                sum += d;
-                System.out.println(d);
+        Pattern pattern = Pattern.compile("[0-9]+");
+        Matcher matcher = pattern.matcher(text);
 
-            } catch (NumberFormatException e) {
-                //System.out.println("это текст");
-            }
+        while (matcher.find()) {
+//            System.out.println(matcher.group());
+            int d = Integer.parseInt(matcher.group());
+
+            System.out.println(d);
+
+            sum += Integer.parseInt(matcher.group());
         }
-        System.out.println("Общая сумма всех ребят: "+sum+"р.");
+
+        System.out.println("Общая сумма всех ребят: " + sum + "р.");
 
     }
 }
