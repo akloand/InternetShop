@@ -52,7 +52,7 @@ public class SequentialWordsNumbers {
             //int a =
             String word = text.substring(a, b);
             System.out.print("("+(i+1)+") "+word);
-            System.out.print(a + " " + b);
+            //System.out.print(a + " " + b);
         }
     }
 
