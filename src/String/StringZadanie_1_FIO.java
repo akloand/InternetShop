@@ -2,7 +2,7 @@ package String;
 
 import java.util.Scanner;
 
-import static String.FirstUpperCase.firstUpperCase;
+import static AndrianCode.Andrian.firstUpperCase;
 
 public class StringZadanie_1_FIO {
     public static void main(String[] args) {

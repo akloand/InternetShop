@@ -7,7 +7,7 @@ public class StringParse {
 
     public static void main(String[] args) {
 
-        String charset = Charset.defaultCharset().displayName();
+        String charset = Charset.defaultCharset().displayName(); //выводит кодировку текста
         System.out.println(charset);
 
         while (true) {
