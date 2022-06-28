@@ -45,7 +45,7 @@ public class Andrian {
     }
 
     //создание массива из слов введенного текста, при помощи indexOf
-    public static String[] splitAndyArray (String textArg) {
+    public static String[] splitAndyArray(String textArg) {
 
         int spaceCount = 0;
         int count = 0;
@@ -76,7 +76,22 @@ public class Andrian {
 
 
     }
+
+    //Рандомное число по диапазону
+    public static float randomRange(int min, int max) {
+        double rnd = Math.random();
+        float value = min + (float) Math.round(rnd * (max - min) * 10) / 10;
+        return value;
+
+//        System.out.println(value + " - от " + min + " до " + max);
+
+
+    }
+
+
 }
+
+
 
 
 
